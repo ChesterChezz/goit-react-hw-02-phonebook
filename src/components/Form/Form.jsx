@@ -7,7 +7,8 @@ class Form extends Component {
     name: '',
     number: '',
   };
-
+  nameInputId = nanoid();
+  telInputId = nanoid();
   handleChange = e => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
